@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* First we are just defining some global styling using the body element -- font, and line height */
+
+body{
+font-family:Verdana, Geneva, sans-serif;
+line-height:1.5;
+}
+
+/* We are turning off underlining for links */
+
+a{
+text-decoration:none;
+}
+
+/* We are indenting paragraphs so paragraph text doesn't bump into other elements */
+
+p{
+margin-left:5px;
+}
+
+/* We are adding a bit of spacing around images */
+
+img{
+margin:5px;
+}
+
+/* Now we begin defining the columns that will display in full-sized browser windows */
+
+article{
+width:1028px;
+background-color:lavender;
+color:brown;
+min-height:500px;
+margin-right:auto;
+margin-left:auto;
+}
+
+section{
+padding:1%;
+margin:1%;
+min-height:300px;
+float:left;
+}
+
+#a img{
+float:left;
+}
+
+#a{
+width:25%;
+background-color:gray;
+color:white;
+}
+
+#b{
+width:25%;
+background-color:white;
+color:darkgreen;
+}
+
+#c{
+width:25%;
+background-color:gray;
+}
+
+header{
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+height:50px;
+color:green;}
+
+
+/* iPad size view */
+@media (max-width:1027px){
+
+/*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+article{
+width:100%; /*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+margin:0px;
+padding:0px;
+}
+
+section{
+min-height:300px; /*We are removing constraints on width and reducing minimum height*/
+}
+
+section img{
+float:left; /*We are floating images in sections for a more compact smartphone design*/
+padding:10px;
+}
+
+#a{
+float:left; /*We are removing the float*/
+width:30%; /*We are defining the width with a relative value*/
+}
+
+#b{
+float:left; /*We are removing the float*/
+width:30%; /*We are defining the width with a relative value*/
+}
+
+#c{
+float:none; /*We are removing the float*/
+width:30%; /*We are defining the width with a relative value*/
+}
+
+}
+
+/* Phone size view */
+@media (max-width:820px){
+
+/*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+article{
+width:100%; /*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+margin:0px;
+padding:0px;
+}
+
+section{
+min-height:300px; /*We are removing constraints on width and reducing minimum height*/
+}
+
+section img{
+float:left; /*We are floating images in sections for a more compact smartphone design*/
+padding:10px;
+}
+
+#a{
+float:none; /*We are removing the float*/
+width:95%; /*We are defining the width with a relative value*/
+background-color:white;
+color:black;
+}
+
+#b{
+float:none; /*We are removing the float*/
+width:95%; /*We are defining the width with a relative value*/
+background-color:white;
+color:black;
+}
+
+#c{
+float:none; /*We are removing the float*/
+width:95%; /*We are defining the width with a relative value*/
+background-color:white;
+color:black;
+}
+
+}
+
+section footer{
+min-height:300px;
+width:100%;
+padding: 1%;
+float:left;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+height:50px;
+color:green;}
