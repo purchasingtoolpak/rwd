@@ -1,24 +1,25 @@
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Slider CSS -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slider.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/default.css">
 
   </head>
 
   <body>
-    <script>
+
     {% slider %}
       ![alt text 1](/img/purchase-order-template.png)
       ![alt text 2](/img/bid-evaluation-gl-min.png)
       ![alt text 3](/img/request-for-quotation-min.png)
     {% endslider %}
-    </script>
+
     <!-- Slider -->
-<script src="{{ site.baseurl }}/assets/js/slider.js"></script>
+<script src="{{ site.baseurl }}/assets/js/slider.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/iis-captions.js"></script>
 <!-- Sliders on pages -->
-<script>
+
 {% for script in page.slider_scripts %}
   {{ script }}
 {% endfor %}
@@ -28,6 +29,6 @@
     {{ script }}
   {% endfor %}
 {% endfor %}
-</script>
+
   </body>
 </html>
