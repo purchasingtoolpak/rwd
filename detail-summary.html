@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>show hide</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+@media (max-width:480px){
+
+summary{
+font-size:1.25rem;
+cursor:pointer;
+background-color:yellow;
+margin:5px;
+padding:5px;
+}
+
+article{
+display:none;
+}
+
+}
+
+@media (min-width:481px){
+
+summary{
+display:;
+}
+
+article{
+float:left;
+width:30%;
+margin:1%;
+padding:1%;
+background-color:beige;
+min-height:400px;
+}
+}
+
+</style>
+</head>
+
+<body>
+  <article>
+    <details>
+  <summary>
+    <h1>Product A</h1>
+  </summary>
+    <p>Product A is so great it will have you holding hands!</p>
+    <p><img src="a.png" height="120px"></p>
+  </details>
+  </article>
+
+  <article>
+    <details>
+      <summary><h1>Product B</h1></summary>
+      <p>Product B will get you moving!</p>
+      <p><img src="b.png" height="120px"></p>
+    </details>
+  </article>
+
+</body>
+
+</html>
