@@ -9,26 +9,9 @@
 
   <body>
 
-    {% slider %}
-      ![alt text 1](/img/purchase-order-template.png)
-      ![alt text 2](/img/bid-evaluation-gl-min.png)
-      ![alt text 3](/img/request-for-quotation-min.png)
-    {% endslider %}
 
-    <!-- Slider -->
-<script src="{{ site.baseurl }}/assets/js/slider.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/iis-captions.js"></script>
-<!-- Sliders on pages -->
 
-{% for script in page.slider_scripts %}
-  {{ script }}
-{% endfor %}
-<!-- Sliders on indexes -->
-{% for post in paginator.posts %}
-  {% for script in post.slider_scripts %}
-    {{ script }}
-  {% endfor %}
-{% endfor %}
+
 
   </body>
 </html>
