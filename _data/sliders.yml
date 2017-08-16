@@ -2,21 +2,22 @@
   bullets: false
   captions: true
   images:
-    - src: /img/bid-evaluation-lg-min.png
-      alt: Bid Evaluation
-    - data-src: /img/purchase-order-template.png
-      alt: Purchase Order Template
-    - data-src: /img/request-for-quotation-min.png
-      data-src-2x: /img/3@2x.jpg
-      alt: Use data-src-2x for HiDPI devices
-    - src: /img/supplier-profile-min.png
-      alt: Links work too
-      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
+    - src: /img/1.jpg
+      alt: At the Beach
+    - data-src: /img/2.jpg
+      alt: Relaxing
+    - data-src: /img/3.jpg
+      alt: Fun with Friends
+    - data-src: /img/4.jpg
+      alt: Meeting New Friends
+      href: https://blog.purchasingtoolpak.com
+      data-src: /img/5.jpg
+      alt: Ski Vacation
   settings:
-    height: 400
+    height:
     initialHeight:
     maxHeight:
-    interval:
+    interval: 3000
     transitionDuration:
     effect:
     disableNav:

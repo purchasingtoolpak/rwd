@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+host: '0.0.0.0'
+port: '80'
+
+#theme: jekyll-theme-minimal
+markdown: kramdown
